@@ -1,0 +1,120 @@
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>My App</title>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+//learning state
+  /*class Repeat extends React.Component{
+    constructor(props){
+      super(props);
+        this.state={
+          mood:'decent'
+        };
+    }
+    render(){
+
+    }
+*/
+
+class Letter extends React.Component{
+  render(){
+          const letterStyle={
+            padding:10,
+            margin:10,
+            backgroundColor:this.props.bgColor,
+            color:"#333",
+            display:"inline-block",
+            fontFamily:"monospace",
+            fontSize:32,
+            textAlign:"center"
+          };
+
+    return(
+      <div style={letterStyle}>
+      {this.props.children}
+        </div>
+      )
+  }
+}
+
+ReactDOM.render(<div>
+                     <Letter bgColor="#58B3FF">A</Letter>
+                     <Letter bgColor="#FF605F">B</Letter>
+                     <Letter bgColor="#FFD52E">C</Letter>
+                     <Letter bgColor="#49DD8E">C</Letter>
+                     <Letter bgColor="#AE99FF">D</Letter>
+                </div>,document.getElementById('root'))
+    /* class App extends React.Component {
+        render() {
+          return <h1>Hello, {this.props.greetTarget}!</h1>
+        }
+      }
+            */
+
+    /* class Morning extends React.Component{
+      render(){
+        return (
+          <div>
+            <h1>Good morning {this.props.target}</h1>
+            <p>This is the morning of December 11th, 2019</p>
+            <p>I hope you have a great day</p>
+          </div>
+        )
+      }
+    }
+
+       class App extends React.Component{
+            handBar(){
+              console.log('Hello World');
+            }
+
+           render(){
+             if(this.props.greetTarget==="Bright Egbo"){
+               return (<Morning target="Bright Egbo"/>)
+             }else{
+               return(
+                 <h1 onClick={this.handBar}>Hello Stranger!</h1>
+               )
+             }
+           }
+       }
+      ReactDOM.render(<div>
+                    <App greetTarget="Bright Egbo"/>
+                 </div>, document.getElementById('root'))
+                 */
+              /*   class DashBoard extends React.Component{
+                     render(){
+                       return(<h1>Hello World</h1>);
+                     }
+                 }
+                 class Buttonifly extends React.Component{
+                   render(){
+                     return (<div>
+                        <button type={this.props.behaviour}>{this.props.children}</button>
+                     </div>)
+                   }
+                 }
+                 ReactDOM.render(<Buttonifly behavoiour='submit'><DashBoard/></Buttonifly> ,document.getElementById('root'));
+            */
+            /*class DashBoard extends React.Component{
+              render(){
+                return(<h1>Hello Bright</h1>)
+              }
+            }
+            ReactDOM.render(<DashBoard />,document.getElementById('root'))
+            */
+       </script>
+  </body>
+</html>
+-->
